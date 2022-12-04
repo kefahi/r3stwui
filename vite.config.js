@@ -20,7 +20,7 @@ export default defineConfig({
       },
       extensions: ['.md', '.svelte'],
       preprocess: [
-        preprocess(),
+        preprocess({ postcss: true }),
         mdsvex({ extension: 'md' })
       ],
     }),
